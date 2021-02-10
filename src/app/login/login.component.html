@@ -1,0 +1,18 @@
+<div class="container">
+    <mat-card>
+        <h2>LOGIN</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+            <div class="form-group form-inline user">
+                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                <input type="text" class="form-control" formControlName="username" placeholder="Username">
+            </div>
+
+            <div class="form-group form-inline">
+              <i class="fa fa-unlock-alt fa-2x" aria-hidden="true"></i>
+                <input type="password" class="form-control" formControlName="password" placeholder="Password">
+            </div>
+            <br>
+            <button class="btn" type="submit" [disabled]="!loginForm.valid">Login</button>
+        </form>
+    </mat-card>
+</div>

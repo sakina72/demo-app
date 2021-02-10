@@ -1,0 +1,11 @@
+<div class="search">
+    <form [formGroup]="form">
+        <div class="form-group form-inline">
+            <input matInput type="text" placeholder="Search" class="form-control" id="search" formControlName="search">
+            <button mat-raised-button (click)="onSearch()">
+                <mat-icon>search</mat-icon>
+            </button>
+            
+        </div> 
+    </form>
+</div>
