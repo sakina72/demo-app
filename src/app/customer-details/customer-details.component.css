@@ -1,0 +1,42 @@
+.details-page{
+  padding: 25px;
+  font-size: medium;
+}
+.title-name h2{
+  padding: 15px;
+  margin-left: 40%;
+  color: #673AB7;
+  font-weight:700;
+}
+.a-style{
+  padding: 15px;
+}
+.a-style a{
+  color: #FFC107;
+  font-weight:500;
+  font-size: 20px;
+}
+.sort-btn{
+  color: #673AB7;
+  margin-left: 85%;
+  border-radius: 12px;
+  font-size: large;
+  font-weight: bolder;
+  padding: 5px;
+}
+table {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+  }
+  th{
+    color: #673AB7;
+  }  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: center;
+    padding: 8px;
+  }
+
+  

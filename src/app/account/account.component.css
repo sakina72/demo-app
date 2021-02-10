@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+  
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 15%;
+}
+  
+.flex-item-right {
+    padding: 10px;
+    flex: 85%;
+}
+.btn{
+    font-size: 16px;
+    font-weight: 450;
+    width: 181px;
+    outline: none;
+}
+.btn:focus{
+    outline: none !important;
+    box-shadow: none;
+}
+

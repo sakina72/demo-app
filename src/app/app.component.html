@@ -1,0 +1,25 @@
+<div *ngIf="local === 'true'; else elseBlock">
+  <mat-toolbar color="primary" class="mat-elevation-z4 mat-app-background">
+    <span>My App</span>
+    <a mat-flat-button color="primary" routerLink="/home" routerLinkActive="active">Home</a>
+    <a mat-flat-button color="primary" routerLink="/about">About</a>
+    <a mat-flat-button color="primary" routerLink="/customer-details">Customer Details</a>
+    <a mat-flat-button color="primary" routerLink="/account">Account</a>
+  </mat-toolbar>
+</div>
+
+<ng-template #elseBlock>
+  <mat-toolbar color="primary" class="mat-elevation-z4 mat-app-background">
+    <span>My App</span>
+    <a mat-flat-button color="primary" routerLink="/home" routerLinkActive="active">Home</a>
+    <a mat-flat-button color="primary" routerLink="/about">About</a>
+    <a mat-flat-button color="primary" routerLink="/customer-details">Customer Details</a>
+    <a mat-flat-button color="primary" routerLink="/login">Login</a>
+  </mat-toolbar>
+</ng-template>
+
+<!-- <nav>
+  <a routerLink="/customer-details">Customer Details</a>
+  <a routerLink="/add-details" routerLinkActive="active">Add Details</a>
+ </nav> -->
+<router-outlet></router-outlet>

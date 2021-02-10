@@ -1,0 +1,57 @@
+<div>
+    <div class="title-name">
+        <h2>{{title }}</h2>
+    </div>
+    
+    <app-search-customer (searchEvent) = searchList($event)></app-search-customer>
+    
+    <div class="a-style">
+        <!-- <a routerLink="/add-details" routerLinkActive="active"> -->
+            <button mat-icon-button color="primary" (click)="onAdd()">
+                <mat-icon>add</mat-icon>Add Details
+            </button>
+        <!-- </a> -->
+    </div>
+    <div class="sort-btn">
+        <button mat-icon-button (click)="sort()">
+            <span class="material-icons">
+                swap_vert
+            </span>
+            Sort A-Z
+        </button>
+    </div>
+
+        <table class="mat-elevation-z8" >
+            <tr>
+                <th>Customer ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                
+            </tr>
+            <tr *ngFor="let customer of filteredList | sort: varSort | filter: searchInput">
+                <td>{{customer.id}}</td>
+                <td>{{customer.fname}}</td>
+                <td>{{customer.lname}}</td>
+                <td>{{customer.email}}</td>
+                <td>{{customer.address}}</td>
+                <td>{{customer.city}}</td>
+                <td>{{customer.state}}</td>
+                <td>
+                    <!-- <a routerLink="/edit-details/{{customer.id}}" routerLinkActive="active"> -->
+                        <button mat-icon-button color="primary" (click)="onEdit([customer.id])">
+                            <mat-icon>edit</mat-icon>
+                        </button>
+                    <!-- </a> -->
+                </td>
+                <td>
+                    <button mat-icon-button color="primary" (click)="onDelete([customer.id])">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </td>
+            </tr>
+        </table>
+</div>

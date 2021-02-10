@@ -1,0 +1,15 @@
+.about-content h1{
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 50%;
+    color:  #673AB7;
+    font-weight: 700;
+
+}
+.about-content p{
+    font-size: larger;
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 50%;
+    text-align: justify;
+}
